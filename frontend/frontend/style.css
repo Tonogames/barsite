@@ -1,0 +1,100 @@
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.navbar a.active {
+  background-color: #4CAF50;
+}
+
+.form-container {
+  background-color: white;
+  padding: 20px;
+  margin: 50px auto;
+  width: 300px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  border-radius: 4px;
+}
+
+h2 {
+  color: #333;
+  text-align: center;
+}
+
+input[type='text'],
+input[type='password'] {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+/* Below styles are for the admin dashboard which you might want to add later /
+.dashboard-container {
+  margin: 20px;
+}
+
+.dashboard-item {
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.dashboard-item h3 {
+  margin: 0;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+/ Responsive styles */
+@media screen and (max-width: 600px) {
+  .form-container {
+    width: 90%;
+    margin: 20px auto;
+  }
+
+  .navbar a {
+    padding: 10px;
+  }
+}
